@@ -7,7 +7,7 @@ if __name__ == "__main__":
     if arg - 1 != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
-    if sys.argv[2] != add or sub or div or mul:
+    if sys.argv[2] != add or != sub or != div or != mul:
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
     ops = {"+": add, "-": sub, "*": mul, "/": div}
