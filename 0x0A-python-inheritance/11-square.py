@@ -8,7 +8,7 @@ class Square(Rectangle):
         """initialize the value"""
         self.integer_validator("size", size)
         self.__size = size
-        super().__init__(self.__self, self.__self)
+        super().__init__(self.__size, self.__size)
 
     def __str__(self):
         string = "[Square] {}/{}".format(self.__size, self.__size)
