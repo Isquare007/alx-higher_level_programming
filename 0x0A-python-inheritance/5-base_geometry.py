@@ -2,6 +2,7 @@
 """A function"""
 
 
-class BaseGeometry():
-    """An empty class""'
+class BaseGeometry:
+    """An empty class"""
+
     pass
