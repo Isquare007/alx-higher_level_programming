@@ -1,8 +1,7 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """A square class"""
-
-
 Rectangle = __import__('9-Rectangle').Rectangle
+
 
 class Square(Rectangle):
     def __init__(self, size):
