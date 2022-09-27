@@ -2,7 +2,7 @@
 """A function that write"""
 
 
-def write_file(filename="", text=""):
+def append_write(filename="", text=""):
     """Writes a string and return character length"""
 
     with open(filename, "a", encoding="utf-8") as Wfile:
