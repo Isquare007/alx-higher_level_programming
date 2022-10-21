@@ -79,7 +79,9 @@ class Rectangle(Base):
             print("")
 
     def __str__(self):
-        return "[Rectangle]({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x,
+                                                       self.__y, self.__width,
+                                                       self.__height)
 
     def update(self, *args, **kwargs):
         """Update the Rectangle.
@@ -107,4 +109,6 @@ class Rectangle(Base):
     def to_dictionary(self):
         """return a dictionary of rectangle sign"""
 
-        return ({'x': self.x, 'y': self.y, 'id': self.id, 'height': self.height, 'width': self.width})
+        return ({'x': self.x, 'y': self.y,
+                'id': self.id, 'height': self.height,
+                 'width': self.width})
