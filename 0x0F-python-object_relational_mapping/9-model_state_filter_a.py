@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
 """
-Write a script that prints the first State object from the
-database hbtn_0e_6_usa
+Write a script that lists all State objects that contain the letter a from
+the database hbtn_0e_6_usa
 """
 
 import sys
@@ -20,9 +20,9 @@ if __name__ == '__main__':
 
     session = Session()
 
-    state = session.query(State).order_by(State.id).first()
+    states = session.query(State).order_by(
+        State.id).where(
+        State.name.like('%a%')).all()
 
-    if state is None:
-        print("Nothing")
-    else:
+    for state in states:
         print("{}: {}".format(state.id, state.name))
