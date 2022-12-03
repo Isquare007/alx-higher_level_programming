@@ -20,8 +20,8 @@ if __name__ == "__main__":
     states = cur.fetchall()
 
     for state in states:
-        # if state[1] == sys.argv[4]:
-        print(state)
+        if state[1] == sys.argv[4]:
+            print(state)
 
     cur.close()
     db.close()
